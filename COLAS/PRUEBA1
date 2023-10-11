@@ -1,0 +1,31 @@
+#Importar la clase Stack de la biblioteca lists
+from lists import Queue2
+from os import system
+
+
+cola = Queue2()
+#Mostrar los elementos de la cola
+cola.Show()
+
+
+#Ingresar un nuevo elemento en la cola
+cola.Enqueue(3.14)
+
+#Mostrar cola cn nuevos elemento ingresado
+print("\nCola con un elemento ingresado")
+cola.Show()
+
+print("Primer elemento de la cola", cola.Front())
+
+#Eliminar un elemento de la cola
+cola.Dequeue()
+
+#Mostrar con el elemneto elimando
+print("\nCola con un elemento eliminado")
+cola.Show()
+
+
+#Elemento buscado
+elementoBuscado= 3.14
+
+print("se ecuentra el elemento  ", elementoBuscado,"se encuentra en la cola ?", cola.Search(elementoBuscado))

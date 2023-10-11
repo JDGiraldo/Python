@@ -1,0 +1,38 @@
+while True:
+    #Limpiar Pantalla
+    system("clear")
+    print("Acciones en la pila: ")
+    #Mostrar Pila
+    print("\nMenu de Opciones:")
+    print("1.Mostrar Pila 1.")
+    print("2.Mostrar Pila 2.")
+    print("3.Mostrar Pila 3.")
+    print("4.Mostrar Todas las pilas 3.")
+    print("5.Salir.")
+    op= int(input("Ingrese la opcion deseada"))
+
+    if op == 1:
+        print("Pila 1 Mostrar")
+        pila1.Show()
+        v= input("Presione cualquier tecla para continuar...")
+    elif op == 2:
+        print("Pila 2 Mostrar")
+        pila2.Show()
+        v= input("Presione cualquier tecla para continuar...")
+        pila2.Show()
+    elif op == 3:
+        pila3.Show()
+        v= input("Presione cualquier tecla para continuar...")
+    elif op == 4:
+        print("Mostrar todas las pilas")
+        print("Pila 1")
+        pila1.Show()
+        print("Pila 2")
+        pila2.Show()
+        print("Pila 3")
+        pila3.Show()
+        v= input("Presione cualquier tecla para continuar...")
+    else:
+        print("Error! a ingresado una opcion incorrecta")
+        v= input("Presione cualquier tecla para continuar...")
+print("Usted a salido del programa")
